@@ -1,0 +1,33 @@
+'''
+# build table for Part A
+for h in h_array:
+    a = forward_difference(x, h)
+    b = f_prime(x) - a
+
+    f_out.write('{0:.6f}'.format(h) + ',')
+    f_out.write('{0:.6f}'.format(a) + ',')
+
+    for i in range(4):
+        f_out.write('{0:.6f}'.format(b / (h ** i)) + ',')
+
+    f_out.write('\n')
+
+f_out.write('\n\n')
+
+
+# build table for Part B
+for h in h_array:
+    a = center_difference(x, h)
+    b = f_prime(x) - a
+
+    f_out.write('{0:.6f}'.format(h) + ',')
+    f_out.write('{0:.6f}'.format(a) + ',')
+
+    for i in range(4):
+        f_out.write('{0:.6f}'.format(b / (h ** i)) + ',')
+
+    f_out.write('\n')
+
+f_out.write('\n')
+'''
+
